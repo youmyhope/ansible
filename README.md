@@ -58,14 +58,6 @@ management**, and **application-deployment** tool enabling
 - Written in: **Python, PowerShell, Shell, Ruby**
 - Operating system: **Linux, Unix-like, MacOS, Windows**
 
-<div align="center">
-  <img width="300" src="assets/ansible-logo.png" alt="Ansible logo">
-</div>
-
-<div align="center">
-  <i>Ansible logo.</i>
-</div>
-
 #### 1.2. Architecture
 
 Ansible works by connecting to your nodes and pushing out small programs, 
@@ -74,13 +66,6 @@ models of the desired state of the system.
 Ansible then _executes_ these modules (over `SSH` by default), 
 and _removes_ them when finished.
 
-<div align="center">
-  <img width="1500" src="assets/ansible-architecture.webp" alt="Ansible architecture">
-</div>
-
-<div align="center">
-  <i>Ansible architecture.</i>
-</div>
 
 #### 1.3. Glossary
 
@@ -126,14 +111,6 @@ in Ansible.
 stores its metrics as time series data, i.e. metrics information is stored with the 
 timestamp at which it was recorded, alongside optional key-value pairs called labels.
 
-<div align="center">
-  <img width="300" src="assets/prometheus-logo.png" alt="Prometheus logo">
-</div>
-
-<div align="center">
-  <i>Prometheus logo.</i>
-</div>
-
 ### 3. Node Exporter
 <a name='node-exporter'></a> 
 
@@ -161,13 +138,6 @@ It provides charts, graphs, and alerts for the web when connected to supported d
 As a visualization tool, **Grafana** is a popular component in **monitoring stacks**, 
 often used in combination with time series databases such as  `Prometheus` and other data sources. 
 
-<div align="center">
-  <img width="300" src="assets/grafana-logo.svg" alt="Grafana logo">
-</div>
-
-<div align="center">
-  <i>Grafana logo.</i>
-</div>
 
 ## II. Prerequisites system
 <a name='system'></a> 
@@ -201,14 +171,6 @@ Because this practice is not related to using **EC2** or **AWS**, so I won't tal
 to do it here. But of course you can check this 
 [article](https://medium.com/nerd-for-tech/how-to-create-a-ubuntu-20-04-server-on-aws-ec2-elastic-cloud-computing-5b423b5bf635) 
 to know how to create **EC2** instances.
-
-<div align="center">
-  <img width="300" src="assets/ec2-logo.png" alt="EC2 logo">
-</div>
-
-<div align="center">
-  <i>EC2 logo.</i>
-</div>
 
 And because we will need to get the `node_exporter` **metrics** from port `9100`, so ypu need
 to change the **Inbound rules** to allow access our **EC2** instances in port `9100`. By default,
